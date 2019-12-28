@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Year in progress</title>
+    <script type="text/javascript" src="loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body onload="move()">
+    <h1 style="text-align: center;">Year In Progress</h1>
+
+    <button onclick="mybt()" class="drk"><span><div id="myDark">DARK</div></span></button>
+
+    <hr>
+    <br>
+
+    <div class="btn-group" align="center">
+        <button class="btn" onclick="prgs()">Progress bar</button>
+        <button class="butn" onclick="myPie()">Pie chart</button>
+    </div>
+    <br>
+
+    <br>
+
+    <div id="myProgress">
+        <div id="myBar">0%</div>
+    </div>
+
+    <br>
+    <div id="piechart"></div>
+</body>
+
+</html>

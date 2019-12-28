@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: rgb(220, 57, 18);
+    border-radius: 50px;
+    border-color: black;
+}
+
+#myBar {
+    width: 10%;
+    height: 30px;
+    background-color: rgb(51, 102, 204);
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 50px;
+}
+
+.btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.butn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 20px;
+}
+
+.butn:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.piechart {
+    align-items: center;
+}
+
+.drk {
+    border-radius: 4px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 4px;
+    padding: 1px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgb(2, 11, 15);
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    color: white;
+}
+
+.dark-mode {
+    background-color: rgb(2, 11, 15);
+    color: white;
+}
+
+.drk span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.drk span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.drk:hover span {
+    padding-right: 25px;
+}
+
+.drk:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+</style>
