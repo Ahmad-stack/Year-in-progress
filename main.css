@@ -84,6 +84,14 @@ body {
     color: white;
 }
 
+.dark-mode-rect {
+    fill: rgb(2, 11, 15);
+}
+
+.dark-mode-text {
+    fill: white;
+}
+
 .drk span {
     cursor: pointer;
     display: inline-block;

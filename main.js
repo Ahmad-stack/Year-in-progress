@@ -2,6 +2,9 @@
 function mybt() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+    document.querySelector("#piechart svg rect[x='0']").classList.toggle("dark-mode-rect");
+    document.querySelectorAll("#piechart svg g g text").forEach((e) => e.classList.toggle("dark-mode-text"))
+
     var x = document.getElementById("myDark");
     if (x.innerHTML === "DARK") {
         x.innerHTML = "LIGHT";
@@ -59,12 +62,6 @@ function drawChart() {
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
     chart.draw(data, options);
 }
-
-$(document).ready(function() {
-    $("button").click(function() {
-        $("a").toggle();
-    });
-});
 
 function prgs() {
     var x = document.getElementById("myProgress");
